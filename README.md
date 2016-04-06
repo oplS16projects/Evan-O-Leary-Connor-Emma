@@ -6,15 +6,18 @@
 * How can we create an informative and visually pleasing presentation using Racket?
 
 ### Analysis
-Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
-
-The idea here is to identify what ideas from the class you will use in carrying out your project. 
+  * We will be applying the concepts learned until this point in class; recursion, hierarchical structures, higher-order procedures, and abstractions are some of the approaches that will be used to complete the project
+  * We will be creating information (data) and will be using this as the content of the presentation
+  * We will make use of the Slideshow, Pict, and potentially RSound and GUI libraries
 
 ### Data set or other source materials
 The data that our project requires is both textual and visual. Background research into our presentation's topic (a brief history of space exploration) will provide text and pictures to make our presentation visually pleasing. Although other images may be used and text corroborated by analyzing other sites our starting point is the Wikipedia page [Space Exploration](https://en.wikipedia.org/wiki/Space_exploration).
 
 ### Deliverable and Demonstration
-Explain exactly what you'll have at the end. What will it be able to do at the live demo?
+  * The end goal is a fully functional, informative, and graphically well designed slideshow presentation
+  * A minimum of 10 slides
+  * To illustrate the capabilities of Racket slideshow library
+  * The inclusion of sound and video as a personal stretch goal
 
 What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
 
@@ -30,7 +33,7 @@ Will it be interactive? Can you show it working? This project involves a live de
 * Presentation will inform on the history of space exploration
 
 ## Architecture Diagram
-Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
+![alt-text](https://i.imgur.com/J9Pmyqu.jpg)
 
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
 
@@ -62,5 +65,8 @@ Create several paragraphs of narrative to explain the pieces and how they intero
 * Will draft a Powerpoint presentation as a guide to be implemented using Racket
 * Will create and order slides in Racket 
 
-### Leonard Lambda @lennylambda
-will work on...
+### Connor Emma @connoremma
+  * Will layout and implememt the outline of slides
+  * Will look into the Pict library to research including images in the slideshow
+  * Will apply styles to text in slideshow
+  * Will implement the infographics as the content permits
