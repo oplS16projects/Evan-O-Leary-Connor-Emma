@@ -19,12 +19,6 @@ The data that our project requires is both textual and visual. Background resear
   * To illustrate the capabilities of Racket slideshow library
   * The inclusion of sound and video as a personal stretch goal
 
-What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
-
-Will it run on some data, like batch mode? Will you present some analytical results of the processing? How can it be re-run on different source data?
-
-Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
-
 ### Evaluation of Results
 * Presentation will include a minimum of 10 slides
 * Presentation will be visually appealing, informative, and have a consistent theme
