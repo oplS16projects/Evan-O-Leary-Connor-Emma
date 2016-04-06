@@ -48,8 +48,8 @@ We will begin by gathering information which will be our **Slideshow content** o
 * Slideshow will be looped
 
 ### Final Presentation (last week of semester)
-* Implement final touches (make sure design scheme is agreed upon an dadjust if needed)
-* Prepare for presentation logistics (who's laptop to use, developing any speech/instruction needed to introduce project, ect.)
+* Implement final touches (make sure design scheme is agreed upon and adjust if needed)
+* Prepare for presentation logistics (who's laptop to use, developing any speech/instructions needed to introduce project, ect.)
 
 ## Group Responsibilities
 
