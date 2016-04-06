@@ -35,7 +35,7 @@ Will it be interactive? Can you show it working? This project involves a live de
 ## Architecture Diagram
 ![alt-text](https://i.imgur.com/J9Pmyqu.jpg)
 
-Create several paragraphs of narrative to explain the pieces and how they interoperate.
+We will begin by gathering information which will be our **Slideshow content** on the subject of our powerpoint, and creating a **Sister Powerpoint** as a dummy final product modeling for our Racket-driven powerpoint. The **local resources** will be gathered during the construction of our sister powerpoint. The paths to each individual resource will be handed directly to functions inside the **Slideshow API** which utilizes **Pict** behind the scenes to display the actual image to the screen, and then its own set of methods to add the image to a powerpoint. 
 
 ## Schedule
 
