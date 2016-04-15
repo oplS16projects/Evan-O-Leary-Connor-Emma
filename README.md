@@ -1,14 +1,17 @@
-# Information Presented Graphically Using Racket
+# Domain Specific Language for Slideshow in Racket
 
 ### Statement
 * Everyone is familiar with creating slideshow presentations in What You See Is What You Get (WYSIWYG) interfaces, such as Google Slides
 * Using Racket we can construct a presentation slides by implementing the slideshow library along with other helper libraries as needed
 * How can we create an informative and visually pleasing presentation using Racket?
+* How can we improve the existing slideshow library using our own implementations of high-level procedures to ease the process of creating slides? 
+* Can we make these improvments using a domain specific language?
 
 ### Analysis
   * We will be applying the concepts learned until this point in class; recursion, hierarchical structures, higher-order procedures, and abstractions are some of the approaches that will be used to complete the project
   * We will be creating information (data) and will be using this as the content of the presentation
   * We will make use of the Slideshow, Pict, and potentially RSound and GUI libraries
+  * We will be building on top of the Pict library by creating procedures to create and process rich media using our own domain specific language
 
 ### Data set or other source materials
 The data that our project requires is both textual and visual. Background research into our presentation's topic (a brief history of space exploration) will provide text and pictures to make our presentation visually pleasing. Although other images may be used and text corroborated by analyzing other sites our starting point is the Wikipedia page [Space Exploration](https://en.wikipedia.org/wiki/Space_exploration).
@@ -32,6 +35,13 @@ The data that our project requires is both textual and visual. Background resear
 We will begin by gathering information which will be our **Slideshow content** on the subject of our powerpoint, and creating a **Sister Powerpoint** as a dummy final product modeling for our Racket-driven powerpoint. The **local resources** will be gathered during the construction of our sister powerpoint. The paths to each individual resource will be handed directly to functions inside the **Slideshow API** which utilizes **Pict** behind the scenes to display the actual image to the screen, and then its own set of methods to add the image to a powerpoint. 
 
 ## Schedule
+
+### Updated First Milestone
+# Goals from the original milestone plan have been revised
+* Project pivot took place as of the week starting Monday, April 4
+- New focus of the project concentrates of the concept of domain specific language, and using abstractions based on existing libraries
+* Rudimentary sample slides created in powerpoint as a model, and in Racket as a first attempt at slimming down the procedures. 
+* Attempt made at implementation of DSL through constructor and predicate?
 
 ### First Milestone (Fri Apr 15)
 * Outline of slides will be completed (w/placeholder info)
