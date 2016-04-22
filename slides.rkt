@@ -79,6 +79,7 @@
              [pct  (if (slide-number) (add-slide-number pct) pct)])
         pct))))
 
+<<<<<<< HEAD
 ;(define audiopath "Aurora.wav")
 
 (define (run)
@@ -196,3 +197,6 @@
   )
 
 
+=======
+;(define audiopath "Aurora.wav")
+>>>>>>> a80b7b77b2f0bb6a4021fafac1a3e37ce6397285
