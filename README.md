@@ -73,4 +73,4 @@ We will begin by gathering information which will be our **Slideshow content** o
   * Will layout and implememt the outline of slides
   * Will look into the Pict library to research including images in the slideshow
   * Will apply styles to text in slideshow
-  * Will implement the infographics as the content permits
+  * Will implement the infographics as the content permits 
