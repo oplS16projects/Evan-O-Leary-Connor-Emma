@@ -151,9 +151,12 @@
    #:timeout 10
    (lt-superimpose
     (hc-append
-    ; (para #:align 'left#:fill? #t #:width 470 "     ")
-     (vl-append (vl-append (t " ") (t " ")) (bitmap "neil_and_buzz_on_moon.png")))
-    (vl-append )))
+     (para #:align 'left #:fill? #t #:width 470 "        ")
+     (bitmap "neil_and_buzz_on_moon.png"))
+
+    (vl-append (item #:bullet (bitmap (arrowhead 20 0)) tt ("July 21, 1969: ") "Neil Armstrong and Buzz Aldrin became the first humans to step foot on another celestial body, the moon")
+               (vl-append
+                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "They spent about 2 hours and 30 minutes on the moon"))))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -188,7 +191,15 @@
   (slide
    #:title "INTERNATIONAL SPACE STATION COMPLETED"
    #:timeout 10
-   (bitmap "International_Space_Station.png"))
+   (lt-superimpose
+    (hc-append
+     (para #:align 'left #:fill? #t #:width 470 "        ")
+     (bitmap "International_Space_Station.png"))
+
+    (vl-append (item #:bullet (bitmap (arrowhead 20 0)) tt ("1998: ") "The first pieces of the International Space Station (ISS) were launched")
+               (vl-append
+                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) tt("Since 2001: ") "A crew of either 2 or 6 have been aboard the ISS at all times")
+                           (item #:bullet (bitmap (arrowhead 20 0)) "The ISS is the larget artifical body in orbit and can be viewed with the naked eye under the right conditions"))))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
