@@ -50,12 +50,14 @@ We will begin by gathering information which will be our **Slideshow content** o
 *	Draft slideshow will be made in PowerPoint, to be used as plan for Racket implementation
 *	Screenshots of current slides
 
+# Goals from the Second Milestone have mostly been met
+
 ### Second Milestone (Fri Apr 22)
-* Screenshots of current slides
-*	Pictures, sound and video will be added
-*	Most placeholder text should be replaced at this point
-* Styles applied to text
-* Slideshow will be looped
+* Screenshots of current slides (Completed)
+*	Pictures, sound and video will be added (Completed)
+*	Most placeholder text should be replaced at this point (Completed)
+* Styles applied to text (Completed)
+* Slideshow will be looped (Completed)
 
 ### Final Presentation (last week of semester)
 * Implement final touches (make sure design scheme is agreed upon and adjust if needed)
@@ -73,4 +75,4 @@ We will begin by gathering information which will be our **Slideshow content** o
   * Will layout and implememt the outline of slides
   * Will look into the Pict library to research including images in the slideshow
   * Will apply styles to text in slideshow
-  * Will implement the infographics as the content permits
+  * Will implement the infographics as the content permits 
