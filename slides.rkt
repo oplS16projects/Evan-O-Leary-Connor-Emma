@@ -79,6 +79,7 @@
              [pct  (if (slide-number) (add-slide-number pct) pct)])
         pct))))
 
+<<<<<<< HEAD
 ;(define audiopath "Aurora.wav")
 
 (define (run)
@@ -134,7 +135,14 @@
   (slide
    #:title "THE DARK SIDE OF THE MOON"
    #:timeout 10
-   (bitmap "earthrise.png"))
+   (para #:width 900 #:fill? #t "On December 21, 1968 Apollo 8, NASA's second manned space mission launched. It orbited the moon 10 times in 20 hours and was the first spacecraft to leave Earth's orbit, orbit the moon, and return safely home. The three astronauts Frank Bowman, James Lovell, and William Anders were the first to:")
+
+   (t " ")
+
+    (hc-append (bitmap "earthrise.png")
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See the far side of the moon not visible from Earth's surface")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See Earth as a whole planet")))))
+
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -152,7 +160,19 @@
   (slide
    #:title "HOUSTON WE HAVE A PROBLEM"
    #:timeout 10
-   (bitmap "apollo_13_damage.png"))
+   (para #:width 900 #:fill? #t "The famous saying “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+
+   (t " ")
+
+   (lt-superimpose
+    (hc-append
+     (para #:align 'left #:fill? #t #:width 470 "        ")
+     (bitmap "apollo_13_damage.png"))
+
+    (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "Loss of power")
+               (vl-append
+                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "Loss of cabin heat")
+                           (item #:bullet (bitmap (arrowhead 20 0)) "Shortage of water"))))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -175,7 +195,14 @@
   (slide
    #:title "FIRST ORBITING OF AN ASTEROID" 
    #:timeout 10
-   (bitmap "eros.png"))
+    (para #:width 900 #:fill? #t "NEAR-Shoemaker was a NASA mission designed to orbit an asteroid. The asteroid NEAR was to orbit was Eros, a large near Earth asteroid, and return data on composition, mineralogy, morphology, and magnetic field to answer questions about these asteroids. Important dates of the mission are:")
+
+   (t " ")
+
+    (hc-append (bitmap "eros.png")
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 4,1996: ") "Launched")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 16, 2000: ") "Orbit around Eros")
+                                     (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 28, 2001: ") "Landed on Eros and sent last signal")))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -191,8 +218,17 @@
   (slide
    #:title "THE FUTURE OF SPACE EXPLORATION"
    #:timeout 10
-   (bitmap "space_launch_system.png"))
+   (para #:width 900 #:fill? #t "The future of space exploration will be funded by both private investors and traditional governments. Some of the goals stated are:")
+
+   (t " ")
+
+    (hc-append (bitmap "space_launch_system.png")
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
 
   )
 
 
+=======
+;(define audiopath "Aurora.wav")
+>>>>>>> a80b7b77b2f0bb6a4021fafac1a3e37ce6397285
