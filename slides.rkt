@@ -79,7 +79,6 @@
              [pct  (if (slide-number) (add-slide-number pct) pct)])
         pct))))
 
-<<<<<<< HEAD
 ;(define audiopath "Aurora.wav")
 
 (define (run)
@@ -88,7 +87,7 @@
   (slide
    #:title "HISTORY OF SPACE EXPLORATION"
    #:timeout 10
-   (inset (scale (bitmap "history_of_space_flight.png") (/ 1024 (pict-width (bitmap "history_of_space_flight.png"))) (/ 768 (pict-height (bitmap "history_of_space_flight.png") ))) (- margin)))
+   (bitmap "history_of_space_flight.png"))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -101,7 +100,7 @@
 
    (lt-superimpose
     (hc-append
-     (para #:align 'left #:fill? #t #:width 470 "        ")
+     (para #:align 'left #:fill? #t #:width 480 "        ")
      (bitmap "hubble_telescope_repair.png"))
 
     (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "Astronomers with telescopes")
@@ -114,19 +113,19 @@
   (slide
    #:title "SPUTNIK I SKIMS THE SKY"
    #:timeout 10
-   (para #:width 900 #:fill? #t "The Soviet Union launched Sputnik I Satellite 1 on October 4, 1957. Sputnik I orbited Earth at a height of around 160 miles. Two radio transmitters sent beeps at 20 and 40 MHz.")
+   (para #:width 900 #:fill? #t "The Soviet Union launched Sputnik I (\"Satellite 1\") on October 4, 1957. Sputnik I orbited Earth at a height of around 160 miles. Two radio transmitters sent beeps at 20 and 40 MHz.")
 
    (t " ")
 
     (hc-append (bitmap "Sputnik_I.png")
-               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "Analysis of the radio signals provided information about the ionosphere")
-                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "Duration of the beeps reported temperature and pressure")))))
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "Analysis of the radio signals provided information about the ionosphere")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "Duration of the beeps reported temperature and pressure")))))
   (add1-slide-number)
   (background-image (bitmap "background.png"))
   (slide
    #:title "MAN REACHES SPACE"
    #:timeout 10
-   (para #:width 900 "On April 12, 1961 the first successful human spaceflight was Vostok I East 1, carrying 27 year old cosmonaut Yuri Gagarin. The flight made one orbit around Earth lasting about 1 hour and 48 minutes.")
+   (para #:width 900 "On April 12, 1961 the first successful human spaceflight was Vostok I (\"East 1\"), carrying 27 year old cosmonaut Yuri Gagarin. The flight made one orbit around Earth lasting about 1 hour and 48 minutes.")
    (t " ")
    (bitmap "Yuri_Gagarin.png"))
 
@@ -140,8 +139,13 @@
    (t " ")
 
     (hc-append (bitmap "earthrise.png")
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See the far side of the moon not visible from Earth's surface")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See Earth as a whole planet")))))
+=======
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See the far side of the moon not visible from Earth's surface")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See Earth as a whole planet")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
 
 
   (add1-slide-number)
@@ -151,22 +155,33 @@
    #:timeout 10
    (lt-superimpose
     (hc-append
-    ; (para #:align 'left#:fill? #t #:width 470 "     ")
-     (vl-append (vl-append (t " ") (t " ")) (bitmap "neil_and_buzz_on_moon.png")))
-    (vl-append )))
+     (para #:align 'left #:fill? #t #:width 500 "        ")
+     (bitmap "neil_and_buzz_on_moon.png"))
+
+    (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:width 480 (tt "July 21, 1969: ") "Neil Armstrong and Buzz Aldrin became the first humans to step foot on another celestial body, the moon")
+               (vl-append
+                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:width 480 "They spent about 2 hours and 30 minutes on the moon"))))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
   (slide
    #:title "HOUSTON WE HAVE A PROBLEM"
    #:timeout 10
+<<<<<<< HEAD
+   (para #:width 900 #:fill? #t "The famous words “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+=======
    (para #:width 900 #:fill? #t "The famous saying “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
 
    (t " ")
 
    (lt-superimpose
     (hc-append
+<<<<<<< HEAD
+     (para #:align 'left #:fill? #t #:width 500 "        ")
+=======
      (para #:align 'left #:fill? #t #:width 470 "        ")
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
      (bitmap "apollo_13_damage.png"))
 
     (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "Loss of power")
@@ -188,7 +203,15 @@
   (slide
    #:title "INTERNATIONAL SPACE STATION COMPLETED"
    #:timeout 10
-   (bitmap "International_Space_Station.png"))
+   (lt-superimpose
+    (hc-append
+     (para #:align 'left #:fill? #t #:width 500 "        ")
+     (bitmap "International_Space_Station.png"))
+
+    (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:width 480 (tt "1998: ") "The first pieces of the International Space Station (ISS) were launched")
+               (vl-append
+                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:width 480 (tt "Since 2001: ") "A crew of either 2 or 6 have been aboard the ISS at all times")
+                           (item #:bullet (bitmap (arrowhead 20 0)) #:width 480 "The ISS is the larget artifical body in orbit and can be viewed with the naked eye under the right conditions"))))))
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -200,9 +223,15 @@
    (t " ")
 
     (hc-append (bitmap "eros.png")
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 4,1996: ") "Launched")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 16, 2000: ") "Orbit around Eros")
+                                     (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 28, 2001: ") "Landed on Eros and sent last signal")))))
+=======
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 4,1996: ") "Launched")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 16, 2000: ") "Orbit around Eros")
                                      (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 28, 2001: ") "Landed on Eros and sent last signal")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -223,12 +252,15 @@
    (t " ")
 
     (hc-append (bitmap "space_launch_system.png")
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
+=======
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
 
   )
 
 
-=======
-;(define audiopath "Aurora.wav")
->>>>>>> a80b7b77b2f0bb6a4021fafac1a3e37ce6397285
+
