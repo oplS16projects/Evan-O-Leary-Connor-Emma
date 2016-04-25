@@ -49,7 +49,9 @@ We will begin by gathering information which will be our **Slideshow content** o
 *	Colors and styles will be decided roughly, can be changed later as needed
 *	Draft slideshow will be made in PowerPoint, to be used as plan for Racket implementation
 *	Screenshots of current slides
+
 # Goals from the Second Milestone have mostly been met
+
 ### Second Milestone (Fri Apr 22)
 * Screenshots of current slides (Completed)
 *	Pictures, sound and video will be added (Completed)
@@ -73,4 +75,4 @@ We will begin by gathering information which will be our **Slideshow content** o
   * Will layout and implememt the outline of slides
   * Will look into the Pict library to research including images in the slideshow
   * Will apply styles to text in slideshow
-  * Will implement the infographics as the content permits
+  * Will implement the infographics as the content permits 

@@ -139,8 +139,18 @@
    (t " ")
 
     (hc-append (bitmap "earthrise.png")
+<<<<<<< HEAD
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See the far side of the moon not visible from Earth's surface")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See Earth as a whole planet")))))
+=======
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See the far side of the moon not visible from Earth's surface")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 480 "See Earth as a whole planet")))))
+=======
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See the far side of the moon not visible from Earth's surface")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 "See Earth as a whole planet")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
+>>>>>>> c33038b0152ba74cbb73e7f64461a2e513c8b985
 
 
   (add1-slide-number)
@@ -162,13 +172,29 @@
   (slide
    #:title "HOUSTON WE HAVE A PROBLEM"
    #:timeout 10
+<<<<<<< HEAD
    (para #:width 900 #:fill? #t "The famous words “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+=======
+<<<<<<< HEAD
+   (para #:width 900 #:fill? #t "The famous words “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+=======
+   (para #:width 900 #:fill? #t "The famous saying “Houston we have a problem.” were uttered on the 1970 Apollo 13 mission. The mission was aborted due to an oxygen tank that exploded 2 days into the mission. Apollo 13 was intended to be the third manned mission to the moon. Astronauts James Lovell, John Swigert, and Fred Haise overcame:")
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
+>>>>>>> c33038b0152ba74cbb73e7f64461a2e513c8b985
 
    (t " ")
 
    (lt-superimpose
     (hc-append
+<<<<<<< HEAD
      (para #:align 'left #:fill? #t #:width 500 "        ")
+=======
+<<<<<<< HEAD
+     (para #:align 'left #:fill? #t #:width 500 "        ")
+=======
+     (para #:align 'left #:fill? #t #:width 470 "        ")
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
+>>>>>>> c33038b0152ba74cbb73e7f64461a2e513c8b985
      (bitmap "apollo_13_damage.png"))
 
     (vl-append (item #:bullet (bitmap (arrowhead 20 0)) "Loss of power")
@@ -210,9 +236,21 @@
    (t " ")
 
     (hc-append (bitmap "eros.png")
+<<<<<<< HEAD
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 4,1996: ") "Launched")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 16, 2000: ") "Orbit around Eros")
                                      (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 28, 2001: ") "Landed on Eros and sent last signal")))))
+=======
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 4,1996: ") "Launched")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 16, 2000: ") "Orbit around Eros")
+                                     (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "February 28, 2001: ") "Landed on Eros and sent last signal")))))
+=======
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 4,1996: ") "Launched")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 16, 2000: ") "Orbit around Eros")
+                                     (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("February 28, 2001: ") "Landed on Eros and sent last signal")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
+>>>>>>> c33038b0152ba74cbb73e7f64461a2e513c8b985
 
   (add1-slide-number)
   (background-image (bitmap "background.png"))
@@ -233,8 +271,18 @@
    (t " ")
 
     (hc-append (bitmap "space_launch_system.png")
+<<<<<<< HEAD
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
+=======
+<<<<<<< HEAD
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (tt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
+=======
+               (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
+                          (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 tt ("NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
+>>>>>>> 383ce57c76bd1a0ab9db2fd14f04332b0ba99497
+>>>>>>> c33038b0152ba74cbb73e7f64461a2e513c8b985
 
   )
 
