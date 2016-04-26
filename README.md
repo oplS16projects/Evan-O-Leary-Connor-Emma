@@ -79,9 +79,9 @@ We will begin by gathering information which will be our **Slideshow content** o
  
 ## Concepts Demonstrated
 
-  * *Symbolic language processing* and *Message passing based object oriented programming*
+  * **Symbolic language processing** and **Message passing based object oriented programming**
    - Cons cells of symbols and objects allow other procedures to have fine grained control over the interface using a sort of "dispatch" style procedure.
-  * *Anonymous functions and data abstraction*
+  * **Anonymous functions and data abstraction**
    - High level generalization of objects with procedures mapped to them create a repeatable programming fashion which is important for a tool such as a slideshow.
 
 ## External Technology and Libraries
