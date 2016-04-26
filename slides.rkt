@@ -75,7 +75,9 @@
 
 ;;;;;----------------------------------------------------------------------;;;;;
 
-;(define audiopath "Aurora.wav")
+;USE THIS FOR TESTING AUDIO: (define audiopath "Aurora_cut1.wav") OR THIS: (define audiopath "Aurora_cut2.wav")
+
+;THIS IS FOR FINAL:(define audiopath "Aurora.wav")
 
 (background-image (bitmap "background_gray.png"))
 
