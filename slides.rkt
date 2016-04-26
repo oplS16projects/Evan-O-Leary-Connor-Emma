@@ -1,9 +1,7 @@
 #lang slideshow
 (require slideshow)
 (require pict images/icons/control images/icons/style)
-
-
-
+;(require (only-in racket/gui/base play-sound))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -18,25 +16,50 @@
 
 ;;NOTES:
 
-;;
+;; To quickly run through our slides and get an idea of our presentation change
+;; the timeout under each slide to 2.
+
+;; EXAMPLE (Changing the first slide's timeout):
+;; (slide
+;;  #:title "HISTORY OF SPACE EXPLORATION"
+;;  #:timeout 2 <----------------------------- timeout parameter to change 
+;;  (bitmap "history_of_space_flight.png"))
+
 ;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;SLIDE COMMANDS:
 
+;;;; Exiting:
+
+;; Must confirm by hitting "Quit" in the gui alert box     
 ;;
+;; Alt-q, Meta-q, or Cmd-q:     end slide show
+;; Esc:                         end slide show
+
+;;;; Navigation:   
+;;                
+;; 1 (one):     first slide
+;; g      :     last slide 
+;; s      :     next slide
+;; a      :     previous slide
+
+;;;; Specific Navigation/ Hide Slide Number
+;;
+;; Alt-g, Cmd-g, or Meta-g:     select a slide
+;; Alt-p, Cmd-p, or Meta-p:     show/hide slide number
 ;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (current-font-size 28)
 (current-main-font "Helvetica")
-
+;(current-main-font-color "White")
 
 (current-title-color "White")
 (current-titlet (lambda (s)
-                  (colorize (text s (current-main-font) 40)
+                  (colorize (text s (cons 'bold (current-main-font)) 40)
                             (current-title-color))))
 
 ;;;;;------------------------------slide assembly--------------------------;;;;;
@@ -82,7 +105,9 @@
 (background-image (bitmap "background_gray.png"))
 
 (define (run)
- (slide-number 1)
+  ;(play (rs-read "Aurora_cut1.wav"))
+  
+  (slide-number 1)
   (slide
    #:title "HISTORY OF SPACE EXPLORATION"
    #:timeout 7
@@ -234,7 +259,7 @@
     (hc-append (bitmap "space_launch_system.png")
                (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (bt "China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
                           (vl-append (item #:bullet (bitmap (arrowhead 20 0)) #:align 'left #:fill? #t #:width 500 (bt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit")))))
-
+  ;(stop)
   )
 
 
