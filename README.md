@@ -1,4 +1,4 @@
-# Domain Specific Language for Slideshow in Racket
+# Information Presented Graphically Using Racket
 
 ### Statement
 * Everyone is familiar with creating slideshow presentations in What You See Is What You Get (WYSIWYG) interfaces, such as Google Slides
