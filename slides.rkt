@@ -1,7 +1,8 @@
 #lang slideshow
 (require slideshow)
 (require pict images/icons/control images/icons/style)
-;(require (only-in racket/gui/base play-sound))
+
+(require (only-in racket/gui/base play-sound))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -100,14 +101,12 @@
 
 ;;;;;----------------------------------------------------------------------;;;;;
 
-;USE THIS FOR TESTING AUDIO: (define audiopath "Aurora_cut1.wav") OR THIS: (define audiopath "Aurora_cut2.wav")
-
-;THIS IS FOR FINAL:(define audiopath "Aurora.wav")
-
 (background-image (bitmap "background.png"))
 
+(thread (lambda () (let loop () (play-sound "Aurora.wav" #f) (loop))))
+
 (define (run)
-  ;(play (rs-read "Aurora_cut1.wav"))
+  ;(thread (lambda () (let loop () (play-sound "Aurora.wav" #f) (loop))))
   
   (slide-number 1)
   (slide
@@ -261,7 +260,6 @@
     (hc-append (bitmap "space_launch_system.png")
                (make-white (vl-append (item #:bullet (bitmap (make-white (arrowhead 20 0))) #:align 'left #:fill? #t #:width 500 (bt "China: ") "Launch a 60 ton multi-module space station into orbit by 2020")
                           (vl-append (item #:bullet (bitmap (make-white (arrowhead 20 0))) #:align 'left #:fill? #t #:width 500 (bt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit"))))))
-  ;(stop)
   )
 
 
