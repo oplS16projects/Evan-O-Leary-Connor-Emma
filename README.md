@@ -27,6 +27,22 @@ Our project is a demonstration of using functional programming practices to cons
   * **Pict images/icons/control images/icons/style:** Member functions from the pict library used to resize, recolor, and stylize text and images in the form of pict objects.
    - https://docs.racket-lang.org/pict/
   * **racket/gui/base play-sound:** Racket GUI's implementation of outputting sound. Used for background music for our presentation.
-   - https://docs.racket-lang.org/gui/
+   - https://docs.racket-lang.org/gui
 
+## Favorite Scheme Expressions
+
+### Connor 
+
+My favorite scheme expression from our final project is this procedure `(current-titlet)` that accepts a procedure as its argument. That expression is evaluated at a high level in an effort to generalize some preliminary settings for our slideshow. For each `title` object that is recieved by this anonymous expression, it is colorized and stylized using message passing object oriented programming.
+
+```
+(current-titlet (lambda (s)
+                  (colorize (text s (cons 'bold (current-main-font)) 40)
+                            (current-title-color))))
+```
  
+### Evan
+
+```
+(define (make-color slide) (colorize slide "White"))
+```
