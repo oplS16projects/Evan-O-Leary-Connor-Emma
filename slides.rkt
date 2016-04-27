@@ -26,7 +26,9 @@
 ;;  #:timeout 2 <----------------------------- timeout parameter to change 
 ;;  (bitmap "history_of_space_flight.png"))
 
-;;
+;; Music continually loops, unfortunately. If you want to stop music from playing
+;; exit out of DrRacket or you could mute your audio, but note the music won't
+;; stop until DrRacket is closed.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -109,10 +111,10 @@
 
 (background-image (bitmap "background.png"))
 
-(thread (lambda () (let loop () (play-sound "Aurora.wav" #f) (loop))))
+(define play-music
+(thread (lambda () (let loop () (play-sound "apollo_11_crew_transmition.wav" #f) (loop)))))
 
 (define (run)
-  ;(thread (lambda () (let loop () (play-sound "Aurora.wav" #f) (loop))))
   
   (slide-number 1)
   (slide
@@ -121,7 +123,7 @@
    (bitmap "history_of_space_flight.png"))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "WHAT IS SPACE EXPLORATION"
    #:timeout 15 #:gap-size 12
@@ -140,7 +142,7 @@
                            (item #:bullet (bitmap (make-color (arrowhead 20 0))) "Robotic probes")))))))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "SPUTNIK I SKIMS THE SKY"
    #:timeout 20 #:gap-size 12
@@ -152,7 +154,7 @@
                (make-color (vl-append (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:align 'left #:fill? #t #:width 480 "Analysis of the radio signals provided information about the ionosphere")
                           (vl-append (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:align 'left #:fill? #t #:width 480 "Duration of the beeps reported temperature and pressure"))))))
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "MAN REACHES SPACE"
    #:timeout 15 #:gap-size 12
@@ -161,7 +163,7 @@
    (bitmap "Yuri_Gagarin.png"))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "THE DARK SIDE OF THE MOON"
    #:timeout 25 #:gap-size 12
@@ -175,7 +177,7 @@
 
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "MAN WALKS ON THE MOON"
    #:timeout 17 #:gap-size 12
@@ -189,7 +191,7 @@
                 (vl-append (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:width 480 "They spent about 2 hours and 30 minutes on the moon")))))))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "HOUSTON WE HAVE A PROBLEM"
    #:timeout 20 #:gap-size 12
@@ -208,7 +210,7 @@
                            (item #:bullet (bitmap (make-color (arrowhead 20 0))) "Shortage of water"))))))))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "HUBBLE GOES OPERATIONAL"
    #:timeout 16 #:gap-size 12
@@ -217,7 +219,7 @@
    (bitmap "Hubble_space_telescope.png"))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "INTERNATIONAL SPACE STATION COMPLETED"
    #:timeout 20 #:gap-size 12
@@ -232,7 +234,7 @@
                            (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:width 480 "The ISS is the larget artifical body in orbit and can be viewed with the naked eye under the right conditions"))))))))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "FIRST ORBITING OF AN ASTEROID" 
    #:timeout 25 #:gap-size 12
@@ -246,7 +248,7 @@
                                      (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:align 'left #:fill? #t #:width 500 (bt "February 28, 2001: ") "Landed on Eros and sent last signal"))))))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "FARTHEST EVER PICTURE OF THE UNIVERSE"
    #:timeout 12 #:gap-size 12
@@ -255,7 +257,7 @@
    (bitmap "eXtreme_Deep_Field.png"))
 
   (add1-slide-number)
-  ;(background-image (bitmap "background.png"))
+
   (slide
    #:title "THE FUTURE OF SPACE EXPLORATION"
    #:timeout 12 #:gap-size 12
@@ -268,8 +270,9 @@
                           (vl-append (item #:bullet (bitmap (make-color (arrowhead 20 0))) #:align 'left #:fill? #t #:width 500 (bt "NASA: ") "Develop the space launch system (SLS) for space exploration beyond Earth's orbit"))))))
   )
 
-; To run slide show by just clicking run, otherwise must type command into repl
-;(run)
+; To run slide show by just clicking run, otherwise, comment out and type command into repl
+(run)
+
 
 
 
