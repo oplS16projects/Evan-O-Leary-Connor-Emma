@@ -64,5 +64,5 @@ We are extremely proud to say that through solving problems related to our proje
  
 ## How to Download and Run
   * Download the latest release from GitHub, making sure all images and sound files are in the same directory as the racket file (slides.rkt)
-  * Run the program through Dr.Racket, ensuring all nessecary dependencies have been installed. 
+  * Run the program (slides.rkt) through Dr.Racket, ensuring all nessecary dependencies have been installed. 
   * Remember, music loops infinitely until you close Dr.Racket.
