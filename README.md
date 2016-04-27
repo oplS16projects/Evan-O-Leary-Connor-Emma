@@ -43,7 +43,7 @@ My favorite scheme expression from our final project is this procedure `(current
  
 ### Evan
 
-Though this code is simple, this line is my personal favorite because it represents a large obstacle that we had to surpass in order to get closer to what our vision of the presentation looked like, and because documentation was so limited, we spent much time looking at each return value for procedures and object types that were in additional dependencies. One of our original goals was to make a *visually pleasing* slideshow presentation, and without this piece of code that could not have happened. 
+This is a simple method of data abstraction for colorizing pict elements that we created. Though this code is simple, this line is my personal favorite because it represents a large obstacle that we had to surpass in order to get closer to what our vision of the presentation looked like, and because documentation was so limited, we spent much time looking at each return value for procedures and object types that were in additional dependencies. One of our original goals was to make a *visually pleasing* slideshow presentation, and without this piece of code that could not have happened. 
 
 ```
 (define (make-color slide) (colorize slide "White"))
