@@ -63,6 +63,6 @@ We are extremely proud to say that through solving problems related to our proje
   * Slides are timed automatically, and may be adjusted by editing the `#timeout:` parameter for each slide. This is explained again in the comments of our racket source. 
  
 ## How to Download and Run
-  * Download the latest release from GitHub, making sure all images and sound files are in the same directory as the racket file (slides.rkt)
-  * Run the program (slides.rkt) through Dr.Racket, ensuring all nessecary dependencies have been installed. 
+  * Download the latest release from GitHub, making sure all images and sound files are in the same directory as the racket file `(slides.rkt)`
+  * Run the program `(slides.rkt)` through Dr.Racket, ensuring all nessecary dependencies have been installed. 
   * Remember, music loops infinitely until you close Dr.Racket.
