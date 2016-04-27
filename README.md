@@ -48,3 +48,16 @@ Though this code is simple, this line is my personal favorite because it represe
 ```
 (define (make-color slide) (colorize slide "White"))
 ```
+
+## Additional Remarks 
+
+Ultimately, we are proud of how the final project turned out. At a first glance, the project seemed like nothing more than copying and pasting a few API functions from a racket library and having our entire project be generated automatically. And there was good reason to believe that at first because our in-class proposal was so high-level that we glazed over most of the technical aspects of what we intended to do. After a temporary remission, our project goals ended up doing a complete 360 and coming full circle, when we discovered ourselves pouring through limited documentation. 
+
+https://lists.racket-lang.org/users/archive/2011-February/044148.html
+
+We are extremely proud to say that through solving problems related to our project, we've in-turn found a solution for others experiencing the same problem as us, giving us a worthwhile sense of accomplishment for solving a non-trivial problem. 
+
+### Note: 
+  * Images and soundfiles must be in the same directory as the racket source file for the slideshow to display properly. 
+  * Background song loops infinitely, the music will not stop until Dr. Racket is closed. 
+  * Slides are timed automatically, and may be adjusted by editing the `#timeout:` parameter for each slide. This is explained again in the comments of our racket source. 
