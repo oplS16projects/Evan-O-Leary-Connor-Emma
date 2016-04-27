@@ -2,9 +2,8 @@
 
 ## Authors
 
-### Evan O'Leary @olearyevan
-
-### Connor Emma @connoremma
+ *Evan O'Leary @olearyevan*
+ *Connor Emma @connoremma*
 
 ## Overview
 Our project is a demonstration of using functional programming practices to construct robust presentation slides using rich text and media, and is also visually pleasing and plausible to an audience. 
